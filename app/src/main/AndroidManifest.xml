@@ -20,13 +20,19 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+
         </activity>
         <activity
             android:name=".Intro.DangKy_Activity"
             android:exported="false" />
         <activity
             android:name=".Intro.DangNhap_Activity"
-            android:exported="false" />
+            android:exported="true" >
+
+        </activity>
+
+
         <activity
             android:name=".Intro.Intro_Activity"
             android:exported="false" />
