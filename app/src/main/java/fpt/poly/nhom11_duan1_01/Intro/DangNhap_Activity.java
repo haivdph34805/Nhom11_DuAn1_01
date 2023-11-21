@@ -15,7 +15,6 @@ public class DangNhap_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dang_nhap);
-        txtusser=findViewById(R.id.da1_DangKy_txtEmail);
-        txtpassword=findViewById(R.id.da1_DangKy_txtPass);
+
     }
 }

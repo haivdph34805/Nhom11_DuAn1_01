@@ -1,0 +1,58 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+   tools:showIn="navigation_view"
+    >
+    <group>
+    </group>
+    <item
+        android:id="@+id/da1_navmenu_Phim"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Quản lý phim"/>
+    <item
+        android:icon="@drawable/baseline_filter_none_24"
+        android:id="@+id/da1_navmenu_TheLoai"
+        android:title="Quản lý thể loại phim" />
+    <item
+        android:icon="@drawable/baseline_menu_book_24"
+        android:id="@+id/da1_navmenu_LichChieu"
+        android:title="Lịch chiếu" />
+    <item
+        android:icon="@drawable/baseline_menu_book_24"
+        android:id="@+id/da1_navmenu_Voucher"
+        android:title="Voucher" />
+    <item
+
+        android:icon="@drawable/baseline_groups_24"
+        android:id="@+id/da1_navmenu_LichSu"
+        android:title="Lịch sử đặt vé" />
+    <item android:id="@+id/nav_item3"
+        android:title="Thống kê">
+        <menu>
+
+
+            <item android:icon="@drawable/baseline_monetization_on_24"
+                android:id="@+id/da1_navmenu_ThongKeDoanhThu"
+                android:title="Thống kê" />
+        </menu>
+    </item>
+
+    <item android:id="@+id/nav_item4"
+        android:title="Người dùng">
+        <menu>
+
+
+            <item android:icon="@drawable/lock"
+                android:id="@+id/da1_navmenu_TaoTaiKhoan"
+                android:title="Tạo tài khoản" />
+            <item android:icon="@drawable/baseline_settings_24"
+                android:id="@+id/da1_navmenu_DoiMatKhau"
+                android:title="Đổi mật khẩu" />
+
+            <item android:icon="@drawable/baseline_logout_24"
+                android:id="@+id/da1_navmenu_DangXuat"
+                android:title="Đăng xuất" />
+        </menu>
+    </item>
+
+
+</menu>
