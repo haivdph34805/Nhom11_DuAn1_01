@@ -76,12 +76,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
     }
-    public void replec(Fragment fragment){
-        FragmentManager frg=getSupportFragmentManager();
-        frg.beginTransaction().replace(R.id.frmBai3,fragment).commit();
+    public void replec(Fragment fragment) {
+        FragmentManager frg = getSupportFragmentManager();
+        frg.beginTransaction().replace(R.id.frmBai3, fragment).commit();
     }
     // set tên  toobal
     public void setActionBarTitle(String title) {

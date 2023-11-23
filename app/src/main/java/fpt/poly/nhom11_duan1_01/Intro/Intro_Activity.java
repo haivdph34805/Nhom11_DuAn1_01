@@ -41,7 +41,7 @@ public class Intro_Activity extends AppCompatActivity {
         btnDangnhap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(Intro_Activity.this,DangKy_Activity.class);
+                Intent intent= new Intent(Intro_Activity.this, DangNhap_Activity.class);
                 startActivity(intent);
             }
         });
@@ -54,10 +54,10 @@ public class Intro_Activity extends AppCompatActivity {
 //        });
 
         List<Integer> imageList = new ArrayList<>();
-        imageList.add(R.drawable.img_14);
-        imageList.add(R.drawable.img_17);
-        imageList.add(R.drawable.img_20);
-        imageList.add(R.drawable.img_11);
+        imageList.add(R.drawable.imageintro1);
+        imageList.add(R.drawable.imageintro2);
+        imageList.add(R.drawable.imageintro3);
+        imageList.add(R.drawable.imageintro4);
 
         AdapterIntro adapter = new AdapterIntro(imageList);
         viewPager.setAdapter(adapter);
