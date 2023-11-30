@@ -1,18 +1,15 @@
 package fpt.poly.nhom11_duan1_01.DTO;
 
-public class DTO_TheLoaiPhim {
+public class TheLoaiPhim {
     private int ID_TL;
     private String TenTheLoai;
 
-    public DTO_TheLoaiPhim() {
-    }
-
-    public DTO_TheLoaiPhim(int ID_TL, String tenTheLoai) {
+    public TheLoaiPhim(int ID_TL, String tenTheLoai) {
         this.ID_TL = ID_TL;
-        TenTheLoai = tenTheLoai;
+        this.TenTheLoai = tenTheLoai;
     }
 
-    public DTO_TheLoaiPhim(String tenTheLoai) {
+    public TheLoaiPhim(String tenTheLoai) {
         TenTheLoai = tenTheLoai;
     }
 

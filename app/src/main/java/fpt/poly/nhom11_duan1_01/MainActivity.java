@@ -23,6 +23,7 @@ import fpt.poly.nhom11_duan1_01.Fragment.FragmentPhim;
 import fpt.poly.nhom11_duan1_01.Fragment.FragmentTheLoai;
 import fpt.poly.nhom11_duan1_01.Fragment.FragmentThongKe;
 import fpt.poly.nhom11_duan1_01.Fragment.FragmentVoucher;
+import fpt.poly.nhom11_duan1_01.Fragment.Fragment_TheLoaiPhim;
 import fpt.poly.nhom11_duan1_01.Intro.DangNhap_Activity;
 
 public class MainActivity extends AppCompatActivity {
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                     FragmentVoucher frg=new FragmentVoucher();
                     replec(frg);
                 } else if (item.getItemId()==R.id.da1_navmenu_TheLoai) {
-                    FragmentTheLoai frg = new FragmentTheLoai();
+                    Fragment_TheLoaiPhim frg = new Fragment_TheLoaiPhim();
                     replec(frg);
                 }else if (item.getItemId()==R.id.da1_navmenu_LichChieu) {
                     FragmentLichChieu frg=new FragmentLichChieu();
