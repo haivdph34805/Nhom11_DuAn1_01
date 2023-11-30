@@ -75,17 +75,17 @@ public class PhimDao {
     }
 
 
-//    public boolean update(Phim ls) {
-//        SQLiteDatabase db = dbHelper.getWritableDatabase();//ghi du lieu vao database
-//        ContentValues values = new ContentValues();//đưa du lieu vao database
-//        values.put("ID_TL",ls.getID_TL());
-//        values.put("TenPhim",ls.getTenPhim());
-//        values.put("DaoDien",ls.getDaoDien());
-//        values.put("NgayPhatHanh",ls.getNgayPhatHanh());
-//        values.put("Mota",ls.getMota());
-//        values.put("Anh",ls.getAnh());
-//        long row = db.update("Phim", values, "ID_Phim=?", new String[]{String.valueOf(ls.getID_Phim())});
-//        return (row > 0);
-//    }
+    public boolean update(DTO_Phim ls) {
+        SQLiteDatabase db = dbHelper.getWritableDatabase();//ghi du lieu vao database
+        ContentValues values = new ContentValues();//đưa du lieu vao database
+        values.put("ID_TL",ls.getID_TL());
+        values.put("TenPhim",ls.getTenPhim());
+        values.put("DaoDien",ls.getDaoDien());
+        values.put("NgayPhatHanh",ls.getNgayPhatHanh());
+        values.put("Mota",ls.getMota());
+        values.put("Anh",ls.getAnh());
+        long row = db.update("Phim", values, "ID_Phim=?", new String[]{String.valueOf(ls.getID_Phim())});
+        return (row > 0);
+    }
 
 }

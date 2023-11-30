@@ -67,7 +67,6 @@ public class AdapterPhim extends RecyclerView.Adapter<AdapterPhim.ViewHoder> {
         holder.txtNgayPhatHanh_item.setText("" + (list.get(position).getNgayPhatHanh()));
 
         String base64String = list.get(position).getAnh();
-
         // Giải mã chuỗi Base64 thành mảng byte
         byte[] decodedByteArray = Base64.decode(base64String, Base64.DEFAULT);
 

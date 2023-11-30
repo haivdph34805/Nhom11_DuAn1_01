@@ -2,9 +2,12 @@ package fpt.poly.nhom11_duan1_01.Fragment;
 
 
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -17,6 +20,7 @@ import java.util.ArrayList;
 import fpt.poly.nhom11_duan1_01.Adapter.AdapterPhim;
 import fpt.poly.nhom11_duan1_01.DAO.PhimDao;
 import fpt.poly.nhom11_duan1_01.DTO.DTO_Phim;
+import fpt.poly.nhom11_duan1_01.MainActivity;
 import fpt.poly.nhom11_duan1_01.R;
 
 public class FragmentPhim extends Fragment {
@@ -48,34 +52,35 @@ public class FragmentPhim extends Fragment {
         adapter = new AdapterPhim(getContext(),list);
         rcvQLPhim.setAdapter(adapter);
 
-//        fltAddPhim.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Fragment_ThemPhim frg=new Fragment_ThemPhim();
-//                MainActivity mainActivity = (MainActivity) getActivity();
-//                mainActivity.replec(frg);
-//            }
-//        });
-//
-//
-//        tempListPhim = phimDao.selectAllPhim();
-//        EditText edt_timKiem = view.findViewById(R.id.edtSeach);
-//        edt_timKiem.addTextChangedListener(new TextWatcher() {
-//            @Override
-//            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
-//            @Override
-//            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-//                list.clear();
-//                for (Phim pm:tempListPhim) {
-//                    if(pm.getTenPhim().contains(charSequence.toString())){
-//                        list.add(pm);
-//                    }}adapter.notifyDataSetChanged();}
-//            @Override
-//            public void afterTextChanged(Editable editable) {
-//
-//            }
-//        });
-//
+
+        fltAddPhim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment_ThemPhim frg=new Fragment_ThemPhim();
+                MainActivity mainActivity = (MainActivity) getActivity();
+                mainActivity.replec(frg);
+            }
+        });
+
+
+        tempListPhim = phimDao.selectAllPhim();
+        EditText edt_timKiem = view.findViewById(R.id.edtSeach);
+        edt_timKiem.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                list.clear();
+                for (DTO_Phim pm:tempListPhim) {
+                    if(pm.getTenPhim().contains(charSequence.toString())){
+                        list.add(pm);
+                    }}adapter.notifyDataSetChanged();}
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+
         return view;
     }
 }
