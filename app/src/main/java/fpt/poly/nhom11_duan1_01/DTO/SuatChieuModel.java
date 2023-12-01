@@ -2,14 +2,30 @@ package fpt.poly.nhom11_duan1_01.DTO;
 
 public class SuatChieuModel {
     private int id,idPhim,idPhong,gia;
-    private String gioChieu,anh,tenPhim,tenPhong;
-
+    private String gioChieu,anh,tenPhim,tenPhong,ngayChieu;
+    private boolean ischon;
 
     public SuatChieuModel() {
     }
 
+    public String getNgayChieu() {
+        return ngayChieu;
+    }
+
+    public void setNgayChieu(String ngayChieu) {
+        this.ngayChieu = ngayChieu;
+    }
+
     public String getAnh() {
         return anh;
+    }
+
+    public boolean isIschon() {
+        return ischon;
+    }
+
+    public void setIschon(boolean ischon) {
+        this.ischon = ischon;
     }
 
     public void setAnh(String anh) {

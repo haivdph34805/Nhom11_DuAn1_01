@@ -9,7 +9,7 @@ import androidx.annotation.Nullable;
 public class DBHelper extends SQLiteOpenHelper {
 
     public DBHelper( Context context) {
-        super(context,"DuAn1", null, 7);
+        super(context,"DuAn1", null, 8);
     }
     @Override
     public void onCreate(SQLiteDatabase db) {
@@ -87,6 +87,10 @@ public class DBHelper extends SQLiteOpenHelper {
 
 // Thêm dữ liệu vào bảng TheLoai
         db.execSQL("INSERT INTO TheLoai (TenTheLoai) VALUES ('TenTheLoai1')");
+
+        //        // Thêm dữ liệu vào bảng Phim
+        db.execSQL("INSERT INTO Phim (ID_TL, TenPhim, DaoDien, NgayPhatHanh, Mota, Anh) VALUES (1, 'TenPhim1', 'DaoDien1', '2023-11-12', 'Mo ta phim 1','android.resource://\" + context.getPackageName() + \"/drawable/img_3')");
+        db.execSQL("INSERT INTO Phim (ID_TL, TenPhim, DaoDien, NgayPhatHanh, Mota, Anh) VALUES (1, 'TenPhim2', 'DaoDien2', '2023-11-12', 'Mo ta phim 2', 'android.resource://\" + context.getPackageName() + \"/drawable/img_4')");
 
 //phòng chiếu
         db.execSQL("INSERT INTO PhongChieu (TenPhong, SoCho, LoaiPhong) VALUES ('Phong1', 50, 1)");

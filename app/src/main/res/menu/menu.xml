@@ -1,34 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/da1_Menu_TrangChu"
-        android:title="Trang chủ"
-        android:icon="@drawable/baseline_home_24"
-        >
-    </item>
-    <item
-        android:id="@+id/da1_Menu_LichChieu"
+        android:id="@+id/home"
         android:title="Lịch chiếu"
-        android:icon="@drawable/baseline_menu_book_24"
+        android:icon="@drawable/baseline_ondemand_video_24"
         >
     </item>
     <item
-        android:id="@+id/da1_TheLoai"
-        android:title="Thể loại"
-        android:icon="@drawable/baseline_menu_book_24"
+        android:id="@+id/phim"
+        android:title="Phim"
+        android:icon="@drawable/baseline_videocam_24"
         >
-    </item>
 
+    </item>
     <item
-        android:id="@+id/da1_Menu_LichSu"
-        android:title="Lịch sử"
-        android:icon="@drawable/baseline_filter_none_24"
+        android:id="@+id/ve"
+        android:title="Vé"
+        android:icon="@drawable/img_21"
+
         >
     </item>
     <item
-        android:id="@+id/da1_Menu_KhuyenMai"
-        android:title="Khuyến mãi"
-        android:icon="@drawable/baseline_bar_chart_24"
+        android:id="@+id/khac"
+        android:title="Khác"
+        android:icon="@drawable/baseline_view_compact_alt_24"
         >
     </item>
 </menu>

@@ -7,6 +7,7 @@ public class DTO_ThanhVien {
     private String gioiTinh;
 
     public DTO_ThanhVien() {
+
     }
 
     public DTO_ThanhVien(int maThanhVien, String tenThanhVien, String namSinh, String gioiTinh) {

@@ -1,142 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:background="@drawable/img_7"
+    tools:context=".Login.DangNhap"
+    android:orientation="vertical">
 
 
-    <TextView
-        android:id="@+id/TvTroLaidn"
-        android:layout_width="50dp"
-        android:layout_height="40dp"
-        android:background="@drawable/baseline_chevron_left_24"
+    <ImageView
+        android:id="@+id/textVie"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+
         android:gravity="center"
-        android:textColor="#00BCD4"
-        android:textSize="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:gravity="center"
-        android:text="Welcome to the product management app, users can add, edit and delete products, manage products in the most convenient way"
-        android:textSize="18dp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toTopOf="@+id/textInputLayout1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.0" />
+        android:textColor="#FFFFFF"/>
+
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout1"
-        android:layout_width="409dp"
+
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.464"
-        app:startIconDrawable="@drawable/email">
+        android:textColorHint="#C9CCC9"
+        android:textColor="#C9CCC9"
+        android:id="@+id/textInputLayout1"
+        app:passwordToggleEnabled="false"
+        android:layout_marginTop="30dp">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/da1_DangNhap_txtEmail"
+            android:id="@+id/edtUser"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-
-            android:hint="Email"
-            android:textColorHint="#E91E63"
+            android:layout_height="55dp"
+            android:hint="Tên Đăng Nhập"
+            android:layout_margin="10dp"
+            android:background="@drawable/group1"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
             />
     </com.google.android.material.textfield.TextInputLayout>
 
 
+    <!--    lệnh hiển thị pass-->
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
-        android:layout_width="409dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        app:counterEnabled="true"
-        app:counterMaxLength="32"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.624"
-        app:passwordToggleEnabled="true"
-        app:startIconDrawable="@drawable/lock">
+        android:textColorHint="#C9CCC9"
+        android:textColor="#C9CCC9"
+        android:id="@+id/textInputLayout"
+        app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/da1_DangNhap_txtPassword"
+            android:id="@+id/edtPass"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:hint="Mật khẩu"
+            android:background="@drawable/group1_1"
+            android:layout_height="55dp"
+            android:hint="Mật Khẩu"
             android:inputType="textPassword"
-            android:maxLength="32" />
+            android:layout_margin="10dp"
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
 
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/img_7" />
 
     <CheckBox
-        android:id="@+id/da1_DangNhap_checkBox"
+        android:id="@+id/chkLuuMatKhau"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nhớ tài khoản ?"
-        android:textColor="#1E88E5"
-        android:layout_marginTop="1dp"
-        app:layout_constraintBottom_toTopOf="@+id/da1_DangNhap_BtnDangNhap"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.112"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+        android:textColor="#C9CCC9"
+        android:text="  Remenber ?"
+        android:layout_marginLeft="10dp"
+        />
+
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/da1_DangNhap_BtnDangNhap"
-        android:layout_width="330dp"
+        android:id="@+id/btnlogin"
+        android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_margin="30dp"
-        android:background="@drawable/button"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
         android:text="Đăng Nhập"
-        android:textColor="@color/white"
-        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="19dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.829" />
+        app:layout_constraintTop_toBottomOf="@+id/chkRemenber"
+        app:layout_constraintVertical_bias="0.443" />
 
     <TextView
-        android:id="@+id/textView"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/txtQuenMK"
+        android:textColor="#C9CCC9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Quên mật khẩu ? "
-        android:textSize="16dp"
-        android:textColor="#00ACC1"
-        android:textStyle="normal"
+        android:text="forgot password ? "
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -144,6 +106,7 @@
         app:layout_constraintVertical_bias="0.89" />
 
     <LinearLayout
+        android:layout_marginTop="10dp"
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -158,17 +121,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#F4511E"
-            android:text="Bạn chưa có tài khoản ? " />
+            android:textColor="#C9CCC9"
+            android:text="Don't have an account ? " />
 
         <TextView
-            android:id="@+id/da1_DangNhap_txtDangKy"
+            android:textColor="#C9CCC9"
+            android:id="@+id/txtSign"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:textColor="#F4511E"
-            android:textSize="20dp"
-            android:text="Đăng Ký"
+            android:text="Sign Up"
             android:textStyle="bold" />
+
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
