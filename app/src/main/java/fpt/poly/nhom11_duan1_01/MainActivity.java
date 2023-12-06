@@ -23,6 +23,7 @@ import com.google.android.material.navigation.NavigationBarView;
 import com.google.android.material.navigation.NavigationView;
 
 import fpt.poly.nhom11_duan1_01.DAO.NguoiDungDao;
+import fpt.poly.nhom11_duan1_01.Fragment.FragmentAllHoaDon;
 import fpt.poly.nhom11_duan1_01.Fragment.FragmentHome;
 import fpt.poly.nhom11_duan1_01.Fragment.FragmentLichChieu;
 import fpt.poly.nhom11_duan1_01.Fragment.FragmentLichSu;
@@ -31,6 +32,7 @@ import fpt.poly.nhom11_duan1_01.Fragment.FragmentTheLoai;
 import fpt.poly.nhom11_duan1_01.Fragment.FragmentThongKe;
 import fpt.poly.nhom11_duan1_01.Fragment.FragmentVe;
 import fpt.poly.nhom11_duan1_01.Fragment.FragmentVoucher;
+import fpt.poly.nhom11_duan1_01.Fragment.Fragment_Khac;
 import fpt.poly.nhom11_duan1_01.Fragment.Fragment_NguoiDung;
 import fpt.poly.nhom11_duan1_01.Fragment.Fragment_PhongChieu;
 
@@ -94,11 +96,11 @@ public class MainActivity extends AppCompatActivity {
                     FragmentVe frg= new FragmentVe();
                     replec(frg);
                 }
-//                else if (item.getItemId()==R.id.khac) {
-//                    Fragment_Khac frg= new Fragment_Khac();
-//                    replec(frg);
-//
-//                }
+                else if (item.getItemId()==R.id.khac) {
+                    Fragment_Khac frg= new Fragment_Khac();
+                    replec(frg);
+
+                }
                 // doi ten titel
                 getSupportActionBar().setTitle(item.getTitle());
                 return true;
@@ -135,8 +137,8 @@ public class MainActivity extends AppCompatActivity {
                     Fragment_NguoiDung frg= new Fragment_NguoiDung();
                     replec(frg);
                 }else if (item.getItemId()==R.id.hoaDon) {
-//                    FragmentAllHoaDon frg= new FragmentAllHoaDon();
-//                    replec(frg);
+                    FragmentAllHoaDon frg= new FragmentAllHoaDon();
+                    replec(frg);
                 }else if (item.getItemId()==R.id.checkout) {
                     Intent intent = new Intent(MainActivity.this, DangNhap_Activity.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);

@@ -36,7 +36,7 @@ public class Intro_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_intro);
         viewPager = findViewById(R.id.viewPager);
         btnDangnhap=findViewById(R.id.da1_Intro_BtnDangNhap);
-        tvsinup=findViewById(R.id.TvSignUp);
+       // tvsinup=findViewById(R.id.TvSignUp);
 
         btnDangnhap.setOnClickListener(new View.OnClickListener() {
             @Override

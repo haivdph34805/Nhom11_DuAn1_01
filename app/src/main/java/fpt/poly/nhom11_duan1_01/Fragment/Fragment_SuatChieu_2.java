@@ -66,9 +66,11 @@ public class Fragment_SuatChieu_2 extends Fragment {
                 listgio=suatChieuDao.getSuatChieuByPhimIdAndDate(sc.getIdPhim(),sc.getNgayChieu());
                 adapterGioChieu=new AdapterGioChieu(getActivity(),listgio);
                 rcvg.setAdapter(adapterGioChieu);
-
             }
         });
         return view;
     }
 }
+
+
+

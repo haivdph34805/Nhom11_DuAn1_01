@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+>
+
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_marginStart="24dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="HÓA ĐƠN"/>
+
+        <!-- Mã Phiếu Mượn ở góc trái và chữ mờ hơn -->
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvmahd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã Hóa đơn: ABC123"
+            android:textSize="14sp"
+            android:textColor="#777"/>
+        <TextView
+            android:id="@+id/tvmand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Người thanh toán: 12345"
+            android:textSize="16sp"
+            android:textColor="#777"
+            android:textStyle="bold"/>
+
+        <!-- Tên Sách và Mã Thành Viên chữ đậm và to hơn -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvsc"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Suất chiếu: Mắt Biếc"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvTrangThai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Đã trả"
+                android:textSize="16sp"
+                android:textColor="#777"/>
+        </LinearLayout>
+
+        <!-- Tiền Thuê và Ngày Mượn trên cùng 1 dòng -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvtongtien"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tổng tiền  Tiền : $10"
+                android:textSize="16sp"
+                android:textColor="#777"/>
+
+            <TextView
+                android:id="@+id/tvNgay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="#777"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvphuongthuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phương thức thanh toán : "
+            />
+
+        <ImageView
+            android:id="@+id/imghtt"
+            android:layout_width="60dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_vertical"
+             />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnthanhtoan"
+            android:background="@drawable/buttonthanhtoan"
+            android:layout_marginTop="10dp"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:text="Đã Thanh toán "/>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -29,6 +29,7 @@ public class AdapterTheLoaiPhim extends RecyclerView.Adapter<AdapterTheLoaiPhim.
     private Context context;
     private ArrayList<TheLoaiPhim> list;
     TheLoaiPhimDao theLoaiPhimDao;
+    
 
     public AdapterTheLoaiPhim(Context context, ArrayList<TheLoaiPhim> list) {
         this.context = context;

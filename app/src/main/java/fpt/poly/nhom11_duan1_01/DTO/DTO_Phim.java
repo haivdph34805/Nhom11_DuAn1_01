@@ -9,12 +9,14 @@ public class DTO_Phim {
     private String Mota;
     private String Anh;
     private int SoLuongVeDat;
+
     private float trungBinhCong;
     private int doanhThu;
 
-    public DTO_Phim(int ID_Phim, String tenPhim, int doanhThu) {
-        this.ID_Phim = ID_Phim;
+
+    public DTO_Phim(String tenPhim, int doanhThu, String anh) {
         TenPhim = tenPhim;
+        Anh = anh;
         this.doanhThu = doanhThu;
     }
 
@@ -132,5 +134,4 @@ public class DTO_Phim {
     public void setAnh(String anh) {
         Anh = anh;
     }
-
 }

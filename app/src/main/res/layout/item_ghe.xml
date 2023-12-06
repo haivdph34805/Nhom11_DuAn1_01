@@ -15,7 +15,8 @@
         android:src="@drawable/img_ghe1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></ImageView>
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp"></ImageView>
 
     <TextView
         android:id="@+id/tvNameGhe"
@@ -73,6 +74,7 @@
         android:src="@drawable/img_3cham"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

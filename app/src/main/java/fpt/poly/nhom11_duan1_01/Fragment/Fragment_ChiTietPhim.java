@@ -26,7 +26,6 @@ import fpt.poly.nhom11_duan1_01.R;
 
 
 public class Fragment_ChiTietPhim extends Fragment {
-
     private ImageView anh;
     private TextView txtID_Phim_chiTiet;
     private TextView txtID_TL_chiTiet;
@@ -35,7 +34,6 @@ public class Fragment_ChiTietPhim extends Fragment {
     private TextView txtNgayPhatHanh_chiTiet;
     private TextView txtMoTa_chiTiet;
     private ImageView btnExit_chiTiet;
-
     @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:id="@+id/btnExit_PhimHot"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back"
+        android:layout_marginLeft="15dp"
+        />
+    <TextView
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:text="TOP Phim Đang Hot"
+        android:textColor="#B80404"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/rcvTop10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

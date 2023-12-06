@@ -89,11 +89,9 @@ public class AdapterPhim extends RecyclerView.Adapter<AdapterPhim.ViewHoder> {
         Bitmap bitmap = BitmapFactory.decodeByteArray(decodedByteArray, 0, decodedByteArray.length);
 
         // Hiển thị Bitmap bằng Glide
-//        Glide.with(context)
-//                .load(bitmap)
-//                .into(holder.anh);
-
-
+        Glide.with(context)
+                .load(bitmap)
+                .into(holder.anh);
 
         holder.chon.setOnClickListener(new View.OnClickListener() {
             @Override
