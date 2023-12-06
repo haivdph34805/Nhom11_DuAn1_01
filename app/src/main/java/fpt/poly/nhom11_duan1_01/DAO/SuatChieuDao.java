@@ -236,7 +236,7 @@ public class SuatChieuDao {
     }
 
     @SuppressLint("Range")
-    public ArrayList<SuatChieuModel> getSuatChieuByPhimId(int phimId) {
+    public ArrayList<SuatChieuModel> getSuatChieuByPhimId(int phimId, String ngay) {
         ArrayList<SuatChieuModel> list = new ArrayList<>();
         SQLiteDatabase db = dbhelper.getReadableDatabase();
 

@@ -16,6 +16,7 @@
             android:name=".Actitvity.ChiTietPhim"
             android:exported="false" />
         <activity
+
             android:name=".Intro.ManHinhChao_Activity"
             android:exported="true">
             <intent-filter>
@@ -23,6 +24,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+
+        <activity android:name=".Actitvity.Booked_tickets_successfully">
 
         </activity>
         <activity
@@ -39,6 +44,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
 
         </activity>
     </application>
