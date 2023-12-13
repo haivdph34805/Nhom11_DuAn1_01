@@ -26,10 +26,6 @@ public class HoaDonDao {
         this.context = context;
         this.dbhelper = new DBHelper(context);
     }
-
-
-
-
     // lấy dữ liệu
     public ArrayList<HoaDonModel> getAllHoaDon(){
         ArrayList<HoaDonModel>list= new ArrayList<>();
@@ -82,7 +78,6 @@ public class HoaDonDao {
 
         return hoTen;
     }
-
     public int getMaxHoaDonId() {
         SQLiteDatabase db = dbhelper.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT MAX(ID_HD) FROM HoaDon", null);
@@ -203,21 +198,15 @@ public class HoaDonDao {
         }
         return list;
     }
-
     // cập nhật hóa đơn
     public boolean updateTrangThaiHoaDon(int idHoaDon, int trangThaiMoi) {
         SQLiteDatabase db = dbhelper.getWritableDatabase();
-
         ContentValues values = new ContentValues();
         values.put("TrangThai", trangThaiMoi);
-
         String whereClause = "ID_HD = ?";
         String[] whereArgs = { String.valueOf(idHoaDon) };
-
         long row = db.update("HoaDon", values, whereClause, whereArgs);
-
         db.close();
-
         return row > 0;
     }
 

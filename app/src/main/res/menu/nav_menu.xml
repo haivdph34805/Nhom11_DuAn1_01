@@ -7,7 +7,7 @@
     <item
         android:id="@+id/suatChieu"
         android:icon="@drawable/baseline_post_add_24"
-        android:title="Quản l suất chiếu"/>
+        android:title="Quản lý suất chiếu"/>
     <item
         android:id="@+id/LoaiPhim"
         android:title="Quản lý thể loại phim "

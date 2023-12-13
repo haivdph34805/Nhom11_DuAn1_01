@@ -99,8 +99,6 @@ public class AdapterHoaDon extends RecyclerView.Adapter<AdapterHoaDon.ViewHolder
                     .load(bitmap)
                     .into(holder.anh);
         }
-
-
                holder.tongtien.setTextColor(Color.parseColor("#0000FF"));;
                int quyen=-1;
         SharedPreferences sharedPreferences = context.getSharedPreferences("login", context.MODE_PRIVATE);
@@ -178,7 +176,6 @@ public class AdapterHoaDon extends RecyclerView.Adapter<AdapterHoaDon.ViewHolder
             pt=view.findViewById(R.id.tvphuongthuc);
         }
     }
-
     @SuppressLint({"MissingInflatedId", "LocalSuppress"})
     public void hienthi(String anh){
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
@@ -195,7 +192,6 @@ public class AdapterHoaDon extends RecyclerView.Adapter<AdapterHoaDon.ViewHolder
         Glide.with(context)
                 .load(bitmap)
                 .into(img);
-
     }
 }
 

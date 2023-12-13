@@ -90,12 +90,12 @@ public class AdapterPhimHay extends RecyclerView.Adapter<AdapterPhimHay.ViewHold
     public class ViewHolder extends RecyclerView.ViewHolder {
         ImageView anh, img_sao;
         TextView sosao;
-
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             anh = itemView.findViewById(R.id.img_AnhTop5);
             sosao = itemView.findViewById(R.id.txtSaoTop5);
             img_sao = itemView.findViewById(R.id.img_Sao);
+
         }
     }
 }

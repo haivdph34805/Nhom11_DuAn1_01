@@ -87,7 +87,6 @@ public class AdapterPhim extends RecyclerView.Adapter<AdapterPhim.ViewHoder> {
 
         // Chuyển đổi mảng byte thành Bitmap
         Bitmap bitmap = BitmapFactory.decodeByteArray(decodedByteArray, 0, decodedByteArray.length);
-
         // Hiển thị Bitmap bằng Glide
         Glide.with(context)
                 .load(bitmap)
