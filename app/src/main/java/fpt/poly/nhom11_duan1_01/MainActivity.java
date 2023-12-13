@@ -32,6 +32,8 @@ import fpt.poly.nhom11_duan1_01.Fragment.FragmentTheLoai;
 import fpt.poly.nhom11_duan1_01.Fragment.FragmentThongKe;
 import fpt.poly.nhom11_duan1_01.Fragment.FragmentVe;
 import fpt.poly.nhom11_duan1_01.Fragment.FragmentVoucher;
+import fpt.poly.nhom11_duan1_01.Fragment.Fragment_DanhThuTheoPhim;
+import fpt.poly.nhom11_duan1_01.Fragment.Fragment_DoanhThu;
 import fpt.poly.nhom11_duan1_01.Fragment.Fragment_Khac;
 import fpt.poly.nhom11_duan1_01.Fragment.Fragment_NguoiDung;
 import fpt.poly.nhom11_duan1_01.Fragment.Fragment_PhongChieu;
@@ -127,11 +129,12 @@ public class MainActivity extends AppCompatActivity {
                     Fragment_ghe frg= new Fragment_ghe();
                     replec(frg);
                 }else if (item.getItemId()==R.id.TKDT) {
-//                    Fragment_DoanhThu frg= new Fragment_DoanhThu();
-//                    replec(frg);
+                    Fragment_DoanhThu frg= new Fragment_DoanhThu();
+                    replec(frg);
                 }else if (item.getItemId()==R.id.TKDTP){
-//                    Fragment_DanhThuTheoPhim frg= new Fragment_DanhThuTheoPhim();
-//                    replec(frg);
+
+                    Fragment_DanhThuTheoPhim frg= new Fragment_DanhThuTheoPhim();
+                    replec(frg);
                 }
                 else if (item.getItemId()==R.id.ThanhVien) {
                     Fragment_NguoiDung frg= new Fragment_NguoiDung();
